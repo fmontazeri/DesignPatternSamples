@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatternApp.FactoryPattern.Model
+﻿namespace DesignPatternApp.FactoryPattern.Model.Vehicle
 {
     public class Scooter : IVehicle
     {

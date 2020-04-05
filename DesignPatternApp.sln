@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternApp.ObserverPattern", "DesignPatternApp.ObserverPattern\DesignPatternApp.ObserverPattern.csproj", "{A853A9F3-580F-4C53-A887-8F9996E41CFA}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternApp.Facade", "DesignPatternApp.Facade\DesignPatternApp.Facade.csproj", "{E1C2F453-6E8F-425D-AB40-8BF5E51627C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternApp.NullObjectPattern", "DesignPatternApp.NullObjectPattern\DesignPatternApp.NullObjectPattern.csproj", "{99B20184-355D-4D24-9172-E6825DF2107D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternApp.Singleton", "DesignPatternApp.Singleton\DesignPatternApp.Singleton.csproj", "{0C91D02A-BDC3-461B-9867-6D7BCF98054B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,8 +53,15 @@ Global
 		{99B20184-355D-4D24-9172-E6825DF2107D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99B20184-355D-4D24-9172-E6825DF2107D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99B20184-355D-4D24-9172-E6825DF2107D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C91D02A-BDC3-461B-9867-6D7BCF98054B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C91D02A-BDC3-461B-9867-6D7BCF98054B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C91D02A-BDC3-461B-9867-6D7BCF98054B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C91D02A-BDC3-461B-9867-6D7BCF98054B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B786409-C04F-4590-97B0-CA139A9B9E26}
 	EndGlobalSection
 EndGlobal

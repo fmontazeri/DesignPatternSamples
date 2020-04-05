@@ -15,7 +15,7 @@ namespace DesignPatternApp.Facade.Model
 
 
         };
-        public  int IsLoan(int bookId)
+        public  int BorrowedTimes(int bookId)
         {
            
             if (Loans.Any(i => i.Id == bookId)) return Loans.Count(i => i.Id == bookId);

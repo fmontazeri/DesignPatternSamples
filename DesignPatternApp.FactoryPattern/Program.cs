@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DesignPatternApp.FactoryPattern.Model;
+using DesignPatternApp.FactoryPattern.Model.Customer;
+using DesignPatternApp.FactoryPattern.Model.Vehicle;
 
 namespace DesignPatternApp.FactoryPattern
 {

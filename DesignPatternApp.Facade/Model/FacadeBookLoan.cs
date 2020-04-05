@@ -36,22 +36,21 @@ namespace DesignPatternApp.Facade.Model
                 return -2;
             }
 
-            var countOfLoans = _loanManager.IsLoan(bookId);
+            var borrowedTimes = _loanManager.BorrowedTimes(bookId);
 
-            if (countOfLoans > 0) ManagerLoans(bookId);
-            return book.Qantity - countOfLoans;
+            if (borrowedTimes > 0) WarningUserToRreturnTheBook(bookId);
+            return book.Qantity - borrowedTimes;
 
         }
 
-        private void ManagerLoans(int bookId)
+        private void WarningUserToRreturnTheBook(int bookId)
         {
             var loans = _loanManager.GetLoans(bookId);
             if(loans != null)
-            foreach (var loan in loans)
-            {
-                if(loan.ExpireDate < DateTime.Now)
-                     _smsManager.SendMessage(loan.User.PhoneNumber);
-            }
+                foreach (var loan in loans.Where(loan => loan.ExpireDate < DateTime.Now))
+                {
+                    _smsManager.SendMessage(loan.User.PhoneNumber);
+                }
         }
     }
 }
