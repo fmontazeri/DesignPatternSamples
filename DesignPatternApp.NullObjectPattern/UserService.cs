@@ -21,7 +21,6 @@ namespace DesignPatternApp.NullObjectPattern
                 return new User() {Authenticated = false, UserName = "zahra"};
             }
 
-
             return new NullUser();
         }
     }

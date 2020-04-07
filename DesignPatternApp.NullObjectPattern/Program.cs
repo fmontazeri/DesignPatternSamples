@@ -12,7 +12,6 @@ namespace DesignPatternApp.NullObjectPattern
         {
             UserService service = new UserService();
             var user = service.GetUser("maryam");
-
             if(user.Authenticated)
             Console.WriteLine($"username:{user.UserName}");
 

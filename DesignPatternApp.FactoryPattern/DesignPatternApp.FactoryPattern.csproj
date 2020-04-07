@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Car\Benz.cs" />
+    <Compile Include="Model\Car\BenzFactory.cs" />
+    <Compile Include="Model\Car\ICar.cs" />
+    <Compile Include="Model\Car\ICarFactory.cs" />
+    <Compile Include="Model\Car\Toyota.cs" />
+    <Compile Include="Model\Car\ToyotaFactory.cs" />
     <Compile Include="Model\Vehicle\ConcreteVehicleFactory.cs" />
     <Compile Include="Model\Customer\CustomerFactory.cs" />
     <Compile Include="Model\Customer\ICustomer.cs" />
@@ -58,6 +64,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
